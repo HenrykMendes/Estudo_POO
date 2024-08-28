@@ -1,7 +1,15 @@
-package Atividades;
+package atividades;
+
+import java.util.Scanner;
 
 public class Questao01 {
     public static void main(String[] args) {
-        System.out.println("agua");
+        Scanner sc = new Scanner(System.in);
+        ProgressaoAritmetica PA = new ProgressaoAritmetica();
+        int numero = sc.nextInt();
+        for (int cont = 1;cont<=numero;cont++){
+            System.out.println(PA.proximoTermo());
+        }
+
     }
 }
